@@ -1,0 +1,583 @@
+{
+	"info": {
+		"_postman_id": "ced1c915-d59a-44a5-8577-06efa1d6b670",
+		"name": "Proyecto-Inventario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23400540"
+	},
+	"item": [
+		{
+			"name": "Inventarios",
+			"item": [
+				{
+					"name": "TipoEquipo",
+					"item": [
+						{
+							"name": "CreateTipoEquipo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\" : \"Cómputo1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/tipoequipos",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"tipoequipos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultar Tipo de Equipos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/tipoequipos?estado=true",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tipoequipos"
+									],
+									"query": [
+										{
+											"key": "estado",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultar Tipo de Equipo por ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/tipoequipos/6332663d414d8108f83fa404?estado=true",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tipoequipos",
+										"6332663d414d8108f83fa404"
+									],
+									"query": [
+										{
+											"key": "estado",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actualizar Tipo de Equipo por ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"estado\" : true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/tipoequipos/6332663d414d8108f83fa404",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tipoequipos",
+										"6332663d414d8108f83fa404"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Elimina Tipo de Equipo por ID",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Marca",
+					"item": [
+						{
+							"name": "CreateMarca",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\" : \"Lenovo\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/marcas",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"marcas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultar Marca de Equipos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/tipoequipos?estado=true",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tipoequipos"
+									],
+									"query": [
+										{
+											"key": "estado",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultar Marca de Equipo por ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/tipoequipos/6332663d414d8108f83fa404?estado=true",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tipoequipos",
+										"6332663d414d8108f83fa404"
+									],
+									"query": [
+										{
+											"key": "estado",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actualizar Marca de Equipo por ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\" : \"Vostro\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/marcas/6334ede448ac5cee4cf6790d",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"marcas",
+										"6334ede448ac5cee4cf6790d"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Elimina Marca de Equipo por ID",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Usuario",
+					"item": [
+						{
+							"name": "CreateUsuario",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nombre\" : \"Naruto Uzumaki\",\r\n    \"email\" : \"Naruto@gmail.com\"    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/usuarios",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"usuarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultar Usuarios",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/usuarios?estado=true",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"usuarios"
+									],
+									"query": [
+										{
+											"key": "estado",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultar Usuario por ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/usuarios/6334f21648ac5cee4cf67924?estado=true",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"usuarios",
+										"6334f21648ac5cee4cf67924"
+									],
+									"query": [
+										{
+											"key": "estado",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actualizar Usuario por ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/usuarios/6334f21648ac5cee4cf67924?estado=true",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"usuarios",
+										"6334f21648ac5cee4cf67924"
+									],
+									"query": [
+										{
+											"key": "estado",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Elimina Marca de Equipo por ID",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "EstadoEquipo",
+					"item": [
+						{
+							"name": "CreateEstadoEquipo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"estado\" : \"en bodega\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/estados",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"estados"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultar Estados de Equipos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/estados?estado=true",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"estados"
+									],
+									"query": [
+										{
+											"key": "estado",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultar Estados de Equipo por ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/estados/6332663d414d8108f83fa404?estado=false",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"estados",
+										"6332663d414d8108f83fa404"
+									],
+									"query": [
+										{
+											"key": "estado",
+											"value": "false"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actualizar Estado de Equipo",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/estados/6332663d414d8108f83fa404",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"estados",
+										"6332663d414d8108f83fa404"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Elimina Estado Equipo por ID",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Inventario",
+					"item": [
+						{
+							"name": "CreateInventario",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"serial\" : \"123\",\r\n    \"modelo\" : \"2021\",\r\n    \"precio\" : \"2500000\",\r\n    \"usuario\":{\r\n       \"_id\" : \"6334f1fa48ac5cee4cf67921\"     \r\n    },\r\n    \"marca\" :{\r\n       \"_id\" : \"6334edee48ac5cee4cf67910\"        \r\n    },\r\n    \"estado\" :{\r\n       \"_id\" : \"6334fec1bea2c5208520c5a0\"        \r\n    },\r\n    \"tipoEquipo\":{\r\n       \"_id\" : \"6332663d414d8108f83fa404\"        \r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/inventarios",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"inventarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultar Inventario",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/inventarios/",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"inventarios",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Consultar  Inventario por ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/inventarios",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"inventarios"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Actualizar Inventario por ID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/estados/6332663d414d8108f83fa404",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"estados",
+										"6332663d414d8108f83fa404"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Elimina Inventario por ID",
+							"request": {
+								"method": "DELETE",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
