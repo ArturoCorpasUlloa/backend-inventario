@@ -40,17 +40,27 @@
 						},
 						{
 							"name": "Consultar Tipo de Equipos",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"method": "GET",
 								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
 								"url": {
-									"raw": "localhost:3000/api/tipoequipos?estado=true",
+									"raw": "{{base_url}}/tipoequipos?estado=true",
 									"host": [
-										"localhost"
+										"{{base_url}}"
 									],
-									"port": "3000",
 									"path": [
-										"api",
 										"tipoequipos"
 									],
 									"query": [
